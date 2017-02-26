@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 import { Navigator } from 'react-native';
-import Home from './home';
+import Segments from './segments';
 
-const HOME_ROUTE = {
-  title: 'Home',
-  comonent: Home
+const SEGMENTS_ROUTE = {
+  title: 'Segments',
+  component: Segments
 };
 
-export default class Navigator extends Component {
+export default class Nav extends Component {
   render() {
     return (
       <Navigator
-        initialRoute={HOME_ROUTE}
+        initialRoute={SEGMENTS_ROUTE}
         renderScene={this.renderScene}
+        {...this.props}
       />
     );
   }
 
   renderScene(route, navigator) {
-    if (route === INTRO_ROUTE) {
+    if (route === SEGMENTS_ROUTE) {
       return (
         <route.component
           {...route.props}
