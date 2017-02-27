@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import * as SegmentStore from '../stores/segmentStore';
 import * as GlobalStyles from '../styles/global';
+
+
+const DURATION_REGEX = /^[0-9][0-9]\:[0-9][0-9]$/;
 
 export default class Segment extends Component {
   constructor(props) {
@@ -18,7 +22,7 @@ export default class Segment extends Component {
   render() {
     return (
       <View style={[styles.debug1, styles.container]}>
-        <Text style={styles.title}>{this.props.title}</Text>
+        <Text style={GlobalStyles.TITLE}>{this.props.title}</Text>
 
         <View style={[styles.debug2]}>
           <Text>Name:</Text>
@@ -56,7 +60,17 @@ export default class Segment extends Component {
   }
 
   handleSavePressed() {
-    this.props.navigator.pop();
+    // error, duration not in right format
+    if (!DURATION_REGEX.test(this.state.duration)) {
+      alert("Duration is not in the correct format (mm:ss)! Please correct and try again.");
+    } else {
+      SegmentStore.addSegment({
+        name: this.state.name,
+        duration: this.state.duration
+      });
+
+      this.props.navigator.pop();
+    }
   }
 
   handleCancelPressed() {
@@ -80,11 +94,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center'
-  },
-  title: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    paddingBottom: 30
   },
   input: {
     height: 20,
