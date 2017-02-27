@@ -10,7 +10,6 @@ export default () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 20,
-    backgroundColor: GlobalStyles.GRAY
+    paddingTop: 20
   }
 })

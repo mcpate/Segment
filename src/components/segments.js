@@ -11,11 +11,12 @@ export default ({ navigator }) => {
 
   return(
     <View style={[styles.debug, styles.container]}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigator.push({
+        name: 'SEGMENT_ROUTE', props: { title: 'New Segment'}})}>
           <Icon
             name='ios-add-circle-outline'
             size={50}
-            color={GlobalStyles.LIGHT}/>
+            color={GlobalStyles.BLACK}/>
       </TouchableOpacity>
     </View>
   );

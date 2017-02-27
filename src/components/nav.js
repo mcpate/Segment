@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 import { Navigator } from 'react-native';
 import Segments from './segments';
+import Segment from './segment';
 
-const SEGMENTS_ROUTE = {
-  title: 'Segments',
-  component: Segments
+
+const ROUTES = {
+  'SEGMENTS_ROUTE': {
+    component: Segments
+  },
+  'SEGMENT_ROUTE': {
+    component: Segment
+  }
 };
 
 export default class Nav extends Component {
   render() {
     return (
       <Navigator
-        initialRoute={SEGMENTS_ROUTE}
+        initialRoute={{ name: 'SEGMENTS_ROUTE' }}
         renderScene={this.renderScene}
         {...this.props}
       />
@@ -19,13 +25,12 @@ export default class Nav extends Component {
   }
 
   renderScene(route, navigator) {
-    if (route === SEGMENTS_ROUTE) {
-      return (
-        <route.component
-          {...route.props}
-          navigator={navigator}
-        />
-      );
-    }
+    var Component = ROUTES[route.name].component;
+    return (
+      <Component
+        {...route.props}
+        navigator={navigator}
+      />
+    );
   }
 }
