@@ -19,6 +19,7 @@ export default class Segments extends Component {
     });
 
     this.buildSegments = this.buildSegments.bind(this);
+    this.handleDeleteSegmentPressed = this.handleDeleteSegmentPressed.bind(this);
   }
 
   render() {
@@ -44,11 +45,11 @@ export default class Segments extends Component {
   buildSegments() {
     return this.state.segments.map((segment) => {
       return (
-        <View style={styles.segment}>
+        <View key={segment.index} style={styles.segment}>
           <TouchableOpacity>
             <Text>{segment.name} - {segment.duration}</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => this.handleDeleteSegmentPressed(segment)}>
             <Icon
               name='ios-trash-outline'
               size={25}
@@ -57,6 +58,10 @@ export default class Segments extends Component {
         </View>
       );
     });
+  }
+
+  handleDeleteSegmentPressed(segment) {
+    SegmentStore.deleteSegment(segment);
   }
 
 }
