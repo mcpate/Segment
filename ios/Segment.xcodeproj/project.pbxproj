@@ -1638,6 +1638,7 @@
 				3EAAE0D71E67DD780086FF8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EAAE0D91E67DD780086FF8A /* Build configuration list for PBXNativeTarget "Segment WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -1646,6 +1647,7 @@
 				3EAAE0DB1E67DD780086FF8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Segment" */ = {
 			isa = XCConfigurationList;
