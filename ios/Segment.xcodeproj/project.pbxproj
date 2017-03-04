@@ -40,11 +40,13 @@
 		3EAAE0BA1E67DD780086FF8A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAE0B81E67DD780086FF8A /* Interface.storyboard */; };
 		3EAAE0BC1E67DD780086FF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAE0BB1E67DD780086FF8A /* Assets.xcassets */; };
 		3EAAE0C31E67DD780086FF8A /* Segment WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3EAAE0C21E67DD780086FF8A /* Segment WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3EAAE0CA1E67DD780086FF8A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0C91E67DD780086FF8A /* InterfaceController.swift */; };
+		3EAAE0CA1E67DD780086FF8A /* StartSegmentsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0C91E67DD780086FF8A /* StartSegmentsInterfaceController.swift */; };
 		3EAAE0CC1E67DD780086FF8A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0CB1E67DD780086FF8A /* ExtensionDelegate.swift */; };
 		3EAAE0CE1E67DD780086FF8A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0CD1E67DD780086FF8A /* NotificationController.swift */; };
 		3EAAE0D01E67DD780086FF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAE0CF1E67DD780086FF8A /* Assets.xcassets */; };
 		3EAAE0D41E67DD780086FF8A /* Segment WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3EAAE0B61E67DD780086FF8A /* Segment WatchKit App.app */; };
+		3EBC5C1B1E67EE9C006DE78C /* InProgressInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC5C1A1E67EE9C006DE78C /* InProgressInterfaceController.swift */; };
+		3EBC5C1D1E6B6E27006DE78C /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC5C1C1E6B6E27006DE78C /* Segment.swift */; };
 		48DC19157A184F3A8EB49F7D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71E5CBBF4DE4BB9AB1762DA /* Ionicons.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		79128E17F8AE4468A45AA066 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8312902F1824B48AB64CE16 /* Octicons.ttf */; };
@@ -327,11 +329,13 @@
 		3EAAE0BD1E67DD780086FF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EAAE0C21E67DD780086FF8A /* Segment WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Segment WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAAE0C81E67DD780086FF8A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		3EAAE0C91E67DD780086FF8A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3EAAE0C91E67DD780086FF8A /* StartSegmentsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSegmentsInterfaceController.swift; sourceTree = "<group>"; };
 		3EAAE0CB1E67DD780086FF8A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		3EAAE0CD1E67DD780086FF8A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3EAAE0CF1E67DD780086FF8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EAAE0D11E67DD780086FF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBC5C1A1E67EE9C006DE78C /* InProgressInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InProgressInterfaceController.swift; sourceTree = "<group>"; };
+		3EBC5C1C1E6B6E27006DE78C /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		4E78B2C4661043FABC089F61 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -532,7 +536,9 @@
 		3EAAE0C61E67DD780086FF8A /* Segment WatchKit App Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3EAAE0C91E67DD780086FF8A /* InterfaceController.swift */,
+				3EBC5C1C1E6B6E27006DE78C /* Segment.swift */,
+				3EAAE0C91E67DD780086FF8A /* StartSegmentsInterfaceController.swift */,
+				3EBC5C1A1E67EE9C006DE78C /* InProgressInterfaceController.swift */,
 				3EAAE0CB1E67DD780086FF8A /* ExtensionDelegate.swift */,
 				3EAAE0CD1E67DD780086FF8A /* NotificationController.swift */,
 				3EAAE0CF1E67DD780086FF8A /* Assets.xcassets */,
@@ -1175,8 +1181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EAAE0CE1E67DD780086FF8A /* NotificationController.swift in Sources */,
+				3EBC5C1D1E6B6E27006DE78C /* Segment.swift in Sources */,
 				3EAAE0CC1E67DD780086FF8A /* ExtensionDelegate.swift in Sources */,
-				3EAAE0CA1E67DD780086FF8A /* InterfaceController.swift in Sources */,
+				3EAAE0CA1E67DD780086FF8A /* StartSegmentsInterfaceController.swift in Sources */,
+				3EBC5C1B1E67EE9C006DE78C /* InProgressInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
