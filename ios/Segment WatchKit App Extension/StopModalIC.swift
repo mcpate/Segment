@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
-//  Segment WatchKit App Extension
+//  ModalIC.swift
+//  Segment
 //
-//  Created by Matthew Pate on 3/1/17.
+//  Created by Matthew Pate on 3/14/17.
 //  Copyright © 2017 Facebook. All rights reserved.
 //
 
@@ -10,9 +10,7 @@ import WatchKit
 import Foundation
 
 
-class StartSegmentsInterfaceController: WKInterfaceController {
-  
-  @IBOutlet var button: WKInterfaceButton!
+class StopModalIC: WKInterfaceController {
   
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
@@ -30,10 +28,8 @@ class StartSegmentsInterfaceController: WKInterfaceController {
     super.didDeactivate()
   }
   
-  
-  
-  @IBAction func startPressed() {
-    button.setTitle("Pause");
+  @IBAction func stopWorkoutPressed() {
+    StopModalIC.reloadRootControllers(withNames: ["StartIC"], contexts: []);
   }
-  
 }
+

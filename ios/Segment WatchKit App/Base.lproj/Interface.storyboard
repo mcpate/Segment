@@ -12,7 +12,7 @@
         <!--StartSegmentsInterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Start Segments" id="AgC-eL-Hgc" userLabel="StartSegmentsInterfaceController" customClass="StartSegmentsInterfaceController" customModule="Segment_WatchKit_App_Extension">
+                <controller identifier="StartIC" title="StartIC" id="AgC-eL-Hgc" userLabel="StartSegmentsInterfaceController" customClass="StartIC" customModule="Segment_WatchKit_App_Extension">
                     <items>
                         <button width="1" alignment="left" verticalAlignment="center" title="Start" id="Avr-yH-vbY" userLabel="StartSegments">
                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,15 +29,19 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--StopModal-->
         <scene sceneID="5wG-Ya-2D5">
             <objects>
-                <controller id="ola-Au-eFe">
+                <controller id="ola-Au-eFe" userLabel="StopModal" customClass="StopModalIC" customModule="Segment_WatchKit_App_Extension">
                     <items>
                         <label height="96" alignment="left" text="Are you sure you want to stop your workout?" textAlignment="center" numberOfLines="4" id="S6o-Xf-fMI"/>
                         <group width="1" alignment="left" id="HWz-Gh-Evh">
                             <items>
-                                <button width="0.5" alignment="left" title="Yes" id="5gH-om-hu5"/>
+                                <button width="0.5" alignment="left" title="Yes" id="5gH-om-hu5">
+                                    <connections>
+                                        <action selector="stopWorkoutPressed" destination="ola-Au-eFe" id="09c-DT-TXW"/>
+                                    </connections>
+                                </button>
                                 <button width="0.5" alignment="left" title="No" id="XkP-tS-edq"/>
                             </items>
                         </group>
@@ -56,14 +60,14 @@
                                 <action selector="pausedPressed" destination="lfp-1t-oGw" id="gg3-xn-zZG"/>
                             </connections>
                         </button>
-                        <label alignment="left" verticalAlignment="center" text="Total:" id="GBQ-9A-Y4p">
+                        <label alignment="left" text="Total:" id="GBQ-9A-Y4p">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <label alignment="left" verticalAlignment="center" text="Label" id="OoU-vF-bcX"/>
+                        <timer alignment="left" previewedSeconds="0" id="Dgj-f2-rtE"/>
                         <label alignment="left" verticalAlignment="center" text="Segment:" id="z7V-1n-cg5">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <label alignment="left" verticalAlignment="center" text="Label" id="nuu-R6-i5C"/>
+                        <timer alignment="left" verticalAlignment="bottom" id="x86-fM-YCm"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Stop" id="FFg-vU-lan">
                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -73,8 +77,9 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="segmentLabel" destination="nuu-R6-i5C" id="1iY-I3-pE5"/>
-                        <outlet property="totalLabel" destination="OoU-vF-bcX" id="UyI-OU-rw4"/>
+                        <outlet property="pauseButton" destination="nbN-gN-qGL" id="F7I-nY-qdQ"/>
+                        <outlet property="segmentTimer" destination="x86-fM-YCm" id="7sd-zx-suW"/>
+                        <outlet property="totalTimer" destination="Dgj-f2-rtE" id="pco-WJ-cZL"/>
                     </connections>
                 </controller>
             </objects>

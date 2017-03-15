@@ -40,11 +40,12 @@
 		3EAAE0BA1E67DD780086FF8A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAE0B81E67DD780086FF8A /* Interface.storyboard */; };
 		3EAAE0BC1E67DD780086FF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAE0BB1E67DD780086FF8A /* Assets.xcassets */; };
 		3EAAE0C31E67DD780086FF8A /* Segment WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3EAAE0C21E67DD780086FF8A /* Segment WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3EAAE0CA1E67DD780086FF8A /* StartSegmentsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0C91E67DD780086FF8A /* StartSegmentsInterfaceController.swift */; };
+		3EAAE0CA1E67DD780086FF8A /* StartIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0C91E67DD780086FF8A /* StartIC.swift */; };
 		3EAAE0CC1E67DD780086FF8A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0CB1E67DD780086FF8A /* ExtensionDelegate.swift */; };
 		3EAAE0CE1E67DD780086FF8A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAE0CD1E67DD780086FF8A /* NotificationController.swift */; };
 		3EAAE0D01E67DD780086FF8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAAE0CF1E67DD780086FF8A /* Assets.xcassets */; };
 		3EAAE0D41E67DD780086FF8A /* Segment WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3EAAE0B61E67DD780086FF8A /* Segment WatchKit App.app */; };
+		3EBBB3201E790572008BB35D /* StopModalIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBBB31F1E790572008BB35D /* StopModalIC.swift */; };
 		3EBC5C1B1E67EE9C006DE78C /* InProgressInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC5C1A1E67EE9C006DE78C /* InProgressInterfaceController.swift */; };
 		3EBC5C1D1E6B6E27006DE78C /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC5C1C1E6B6E27006DE78C /* Segment.swift */; };
 		48DC19157A184F3A8EB49F7D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71E5CBBF4DE4BB9AB1762DA /* Ionicons.ttf */; };
@@ -329,11 +330,12 @@
 		3EAAE0BD1E67DD780086FF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EAAE0C21E67DD780086FF8A /* Segment WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Segment WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAAE0C81E67DD780086FF8A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		3EAAE0C91E67DD780086FF8A /* StartSegmentsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSegmentsInterfaceController.swift; sourceTree = "<group>"; };
+		3EAAE0C91E67DD780086FF8A /* StartIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartIC.swift; sourceTree = "<group>"; };
 		3EAAE0CB1E67DD780086FF8A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		3EAAE0CD1E67DD780086FF8A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3EAAE0CF1E67DD780086FF8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EAAE0D11E67DD780086FF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBBB31F1E790572008BB35D /* StopModalIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopModalIC.swift; sourceTree = "<group>"; };
 		3EBC5C1A1E67EE9C006DE78C /* InProgressInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InProgressInterfaceController.swift; sourceTree = "<group>"; };
 		3EBC5C1C1E6B6E27006DE78C /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
 		4E78B2C4661043FABC089F61 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -537,11 +539,12 @@
 			isa = PBXGroup;
 			children = (
 				3EBC5C1C1E6B6E27006DE78C /* Segment.swift */,
-				3EAAE0C91E67DD780086FF8A /* StartSegmentsInterfaceController.swift */,
+				3EAAE0C91E67DD780086FF8A /* StartIC.swift */,
 				3EBC5C1A1E67EE9C006DE78C /* InProgressInterfaceController.swift */,
+				3EBBB31F1E790572008BB35D /* StopModalIC.swift */,
+				3EAAE0CF1E67DD780086FF8A /* Assets.xcassets */,
 				3EAAE0CB1E67DD780086FF8A /* ExtensionDelegate.swift */,
 				3EAAE0CD1E67DD780086FF8A /* NotificationController.swift */,
-				3EAAE0CF1E67DD780086FF8A /* Assets.xcassets */,
 				3EAAE0D11E67DD780086FF8A /* Info.plist */,
 				3EAAE0C71E67DD780086FF8A /* Supporting Files */,
 			);
@@ -770,10 +773,15 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = EQSDZ8ARN2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = EQSDZ8ARN2;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EQSDZ8ARN2;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
@@ -783,10 +791,12 @@
 					};
 					3EAAE0B51E67DD780086FF8A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EQSDZ8ARN2;
 						ProvisioningStyle = Automatic;
 					};
 					3EAAE0C11E67DD780086FF8A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EQSDZ8ARN2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1181,9 +1191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EAAE0CE1E67DD780086FF8A /* NotificationController.swift in Sources */,
+				3EBBB3201E790572008BB35D /* StopModalIC.swift in Sources */,
 				3EBC5C1D1E6B6E27006DE78C /* Segment.swift in Sources */,
 				3EAAE0CC1E67DD780086FF8A /* ExtensionDelegate.swift in Sources */,
-				3EAAE0CA1E67DD780086FF8A /* StartSegmentsInterfaceController.swift in Sources */,
+				3EAAE0CA1E67DD780086FF8A /* StartIC.swift in Sources */,
 				3EBC5C1B1E67EE9C006DE78C /* InProgressInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1238,6 +1249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1263,6 +1275,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				INFOPLIST_FILE = SegmentTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1285,6 +1298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				INFOPLIST_FILE = Segment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1302,6 +1316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				INFOPLIST_FILE = Segment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1324,6 +1339,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Segment-tvOS/Info.plist";
@@ -1355,6 +1371,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Segment-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1433,6 +1450,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Segment WatchKit App Extension/Info.plist";
@@ -1459,6 +1477,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Segment WatchKit App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1483,6 +1502,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IBSC_MODULE = Segment_WatchKit_App_Extension;
@@ -1510,6 +1530,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = EQSDZ8ARN2;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IBSC_MODULE = Segment_WatchKit_App_Extension;
 				INFOPLIST_FILE = "Segment WatchKit App/Info.plist";
