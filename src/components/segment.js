@@ -21,37 +21,43 @@ export default class Segment extends Component {
 
   render() {
     return (
-      <View style={[styles.debug1, styles.container]}>
+      <View style={[styles.container]}>
         <Text style={GlobalStyles.TITLE}>{this.props.title}</Text>
 
-        <View style={[styles.debug2]}>
-          <Text>Name:</Text>
-          <TextInput
-            style={[styles.debug2, styles.input]}
-            autoCorrect={false}
-            keyboardType='default'
-            onChangeText={(text) => this.setState({ name: text })}
-          />
+        <View style={[]}>
+          <View style={{paddingBottom: 20}}>
+            <Text>Name:</Text>
+            <TextInput
+              style={[styles.input]}
+              autoCorrect={false}
+              keyboardType='default'
+              onChangeText={(text) => this.setState({ name: text })}
+            />
+          </View>
 
-          <Text>Duration:</Text>
-          <TextInput
-            style={[styles.debug2, styles.input]}
-            autoCorrect={false}
-            keyboardType='default'
-            onChangeText={(text) => this.setState({ duration: text })}
-          />
+          <View style={{paddingBottom: 20}}>
+            <Text>Duration:</Text>
+            <TextInput
+              style={[styles.input]}
+              autoCorrect={false}
+              keyboardType='default'
+              onChangeText={(text) => this.setState({ duration: text })}
+            />
+          </View>
 
-          <Text>Alert:</Text>
-          <Text>Default</Text>
+          <View style={{paddingBottom: 20}}>
+            <Text>Alert:</Text>
+            <Text>Default</Text>
+          </View>
         </View>
 
-        <View style={[styles.debug3, styles.buttonContainer]}>
+        <View style={[styles.buttonContainer]}>
           <TouchableOpacity onPress={this.handleSavePressed}>
-            <Text>Save</Text>
+            <Text style={styles.button}>Save</Text>
           </TouchableOpacity>
 
           <TouchableOpacity onPress={this.handleCancelPressed}>
-            <Text>Cancel</Text>
+            <Text style={styles.button}>Cancel</Text>
           </TouchableOpacity>
         </View>
 
@@ -97,10 +103,16 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 20,
+    width: 200,
     borderWidth: 1,
     borderRadius: 5
   },
   buttonContainer: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: 100
+  },
+  button: {
+    color: 'blue'
   }
 });

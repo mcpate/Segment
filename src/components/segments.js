@@ -24,7 +24,7 @@ export default class Segments extends Component {
 
   render() {
     return (
-      <View style={[styles.debug, styles.container]}>
+      <View style={[styles.container]}>
         <Text style={GlobalStyles.TITLE}>Segments</Text>
 
         {this.buildSegments()}
@@ -45,7 +45,7 @@ export default class Segments extends Component {
   buildSegments() {
     return this.state.segments.map((segment) => {
       return (
-        <View key={segment.index} style={styles.segment}>
+        <View key={segment.index} style={[styles.segment]}>
           <TouchableOpacity>
             <Text>{segment.name} - {segment.duration}</Text>
           </TouchableOpacity>
@@ -75,7 +75,9 @@ const styles = StyleSheet.create({
     alignItems: 'center' // flex is column so this moves along cross axis (X axis)
   },
   segment: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: 200
   },
   debug: {
     borderWidth: 1,

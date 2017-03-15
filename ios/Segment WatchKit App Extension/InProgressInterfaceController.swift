@@ -97,7 +97,7 @@ class InProgressInterfaceController: WKInterfaceController {
     }
     
     func handleTotalTimerTimeout() {
-        print("timer timeout!");
+        // do stop here
     }
     
     @IBAction func pausedPressed() {

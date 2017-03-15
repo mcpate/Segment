@@ -37,12 +37,11 @@
                         <label height="96" alignment="left" text="Are you sure you want to stop your workout?" textAlignment="center" numberOfLines="4" id="S6o-Xf-fMI"/>
                         <group width="1" alignment="left" id="HWz-Gh-Evh">
                             <items>
-                                <button width="0.5" alignment="left" title="Yes" id="5gH-om-hu5">
+                                <button width="0.5" alignment="center" title="Yes" id="5gH-om-hu5">
                                     <connections>
                                         <action selector="stopWorkoutPressed" destination="ola-Au-eFe" id="09c-DT-TXW"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" alignment="left" title="No" id="XkP-tS-edq"/>
                             </items>
                         </group>
                     </items>
